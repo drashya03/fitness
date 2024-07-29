@@ -101,10 +101,11 @@ nav ul li a:hover::after {
 
 .posts {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   align-items: start;
   /* padding: 20px; */
   background-color: transparent;
+  max-width: 80;
 }
 
 .item {
@@ -112,7 +113,7 @@ nav ul li a:hover::after {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 40px;
+/*   padding: 40px; */
 }
 
 .number {

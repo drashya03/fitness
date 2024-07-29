@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+.image {
+  width: 100px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 30px 10px;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes the default underline */
+  color: black; /* Default text color */
+  position: relative; /* Ensures the pseudo-element is positioned relative to the link */
+}
+
+nav ul li a::after {
+  content: ""; /* Creates a pseudo-element */
+  display: block; /* Makes the pseudo-element a block */
+  width: 0px; /* Initially no width */
+  height: 1px; /* Height of the underline */
+  background: rgb(89, 117, 177); /* Color of the underline */
+  transition: width 0s; /* Smooth transition for the width */
+  position: absolute; /* Positions the pseudo-element */
+  left: 0; /* Aligns it to the left */
+  bottom: 0; /* Positions it at the bottom */
+}
+
+nav ul li a:hover::after {
+  width: 100%; /*Expands the underline to full width on hover */
+}
+.container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.container img {
+  size: 500px;
+  width: 100%;
+}
+
+.app-button {
+  margin: 50px 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-stretch: ultra-expanded;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px;
+  border-color: rgb(247, 2, 2);
+  color: rgb(238, 13, 13);
+}
+.container .app-button {
+  left: 2%;
+}
+.container .Text {
+  position: absolute;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  left: 5%;
+  top: 50%;
+}
+
+.container .row{
+ color: black;
+ position: absolute;
+width: 100%;
+top: 200px;
+display: flex;
+list-style: none;
+left: 2%;
+text-align: left;
+ 
+}

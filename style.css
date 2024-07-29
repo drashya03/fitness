@@ -87,9 +87,9 @@ nav ul li a:hover::after {
 
 .container .row{
  color: black;
- position: absolute;
+ position: relative;
 width: 100%;
-top: 200px;
+top: 150px;
 display: flex;
 list-style: none;
 left: 2%;
